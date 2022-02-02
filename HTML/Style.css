@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 21cm;
+    outline: 1px solid lightgray;
+    margin: 0 auto;
+    font-family: montserrat;
+}
+
+header{
+    display: flex;
+    height: 10%;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+.photo a{
+    color: #83cff4;
+}
+
+.photo h2:hover{
+    padding: 0.4em;
+    color: #83cff4;
+    height: fit-content;
+    margin-top: -3em;
+    font-size: 120%;
+}
+
+.titre{
+    display: block;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2, h3, h4{
+    font-family: Retro gaming regular;
+}
+
+h4{
+    color: #83cff4;
+    font-size: 400%;
+}
+
+h2{
+    color: white;
+    background-color: black;
+    width: fit-content;
+    font-size: 100%;
+}
+
+.bio, .formation{
+    max-height: 28vh;
+    margin-top: 2em;
+}
+
+.formation li{
+    border: 0;
+    margin: 0.2em 0 0 1em;
+}
+
+.formation ul{
+    margin-top: 1.2em;
+}
+
+.formation li:not(.bold){
+    list-style-type: disclosure-closed;
+}
+
+.alain, .gds{
+    display: flex;
+}
+
+.retro{
+    font-family: Retro gaming regular;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.experiences p{
+    margin: 20px 0 0 10px;
+}
+
+.adresse{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0 0 100px;
+}
+
+.topborder{
+    margin-right: 10px;
+}
+
+.contact{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+}
+
+ul{
+    font-size: 70%;
+}
+
+li{
+    list-style-type: none;
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+
+.container{
+    display: flex;
+    gap: 3em;
+}
+
+.para{
+    margin: 1.5em;
+    min-height: 28vh;
+}
+
+h3{
+    border-bottom: 1px solid black;
+}
+
+.gauche h3:before{
+}
+
+p{
+    font-size: 70%;
+}
+
+.gauche, .droite{
+    flex: 1;
+}
+
+.HTML, .CSS, .AE, .PS, .IL, .WP, .WC{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8em;
+}
+
+.competences img{
+    width: 50%;
+}
+
+.hobbies .para{
+    text-align: center;
+}
+
+.hobbies img{
+    width: 70%;
+}
+
+.langues .para{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.langues img{
+    width: 30%;
+    height: 10em;
+}
+
+.photo h2{
+    padding: 0.4em;
+    color: #83cff4;
+    height: fit-content;
+    margin-top: -3em;
+}
+
+.id{
+    width: 8em;
+}
+
+.photo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1em;
+}
+
+#pointer {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    background: black;
+  }
+
+  #pointer:before {
+    content: "";
+    position: absolute;
+    right: -1em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1em solid black;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+  }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 460px) {
+    
+    body{
+        padding: 1em;
+        height: fit-content;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .adresse{
+        padding-left: 1em;
+    }
+
+    .adresse, .contact{
+        font-size: x-large;
+        margin-right: 0.4em;
+    }
+
+    .bio h3{
+        padding-top: 2em;
+    }
+
+    p:not(.topborder){
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    .bio, .formation{
+        max-height: none;
+    }
+
+    .specialite .para{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .langues .para{
+        margin-top: 2em;
+    }
+
+    .formation .para{
+        font-size: 30px;
+    }
+
+    .alain p, .gds p{
+        margin-top: 0;
+    }
+
+    .gds{
+        margin-top: 1.5em;
+    }
+
+    .photo{
+        justify-content: center;
+    }
+
+    .id{
+        width: 300px;
+    }
+
+    .photo h2{
+        font-size: 250%;
+    }
+}
+
+/* PRINT */
+
+@media print{
+    .bio, .formation, .specialite, .competences, .experiences, .hobbies{
+        height: 6.5cm;
+    }
+
+    .photo{
+        justify-content: space-evenly;
+        margin-top: 2em;
+    }
+
+    .id{
+        width: 6em;
+    }
+}
