@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+h1 {
+    margin: 5px;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+h3 {
+    font-family: 'Retro gaming regular';
+    margin-bottom: 0;
+}
+
+.contact {
+    text-align: right;
+    border-right: 3px solid;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact2 {
+    padding-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.border-formation {
+    border-right: 3px solid;
+}
+
+.source-font {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    padding: 60px 0;
+}
+
+.boxes {
+    display: flex;
+    text-align: left;
+}
+
+.box-10per {
+    display: inline-block;
+    width: 10%;
+}
+.box-25per {
+    display: inline-block;
+    width: 25%;
+}
+.box-30per {
+    display: inline-block;
+    width: 30%;
+}
+
+.box-55per {
+    display: inline-block;
+    width: 55%;
+}
+
+.robot {
+    width: 55%;
+    height: auto;
+}
+
+.devweb{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+.bio{
+    width: 80%;
+}
+
+.hive {
+    width: 40%;
+    height: auto;
+}
+
+.formation {
+    padding-bottom: 20px;
+}
+
+@media print {
+    body {
+        font-size: 12px;
+    } 
+
+    .hive {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .box-10per, .box-25per, .box-30per, .box-55per {
+        display: inline-block;
+        width: 100%;
+    }
+    .boxes {
+        display: inline;
+    }
+    .softhard {
+        padding-left: 50px;
+    }
+    .contact {
+        text-align: left;
+    }
+    .contact2 {
+        padding-left: 0px;
+    }
+}
